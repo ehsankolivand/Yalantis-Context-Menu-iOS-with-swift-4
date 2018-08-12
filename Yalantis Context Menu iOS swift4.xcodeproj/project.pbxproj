@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		AF680B4F2120291A00FAD5B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF680B4E2120291A00FAD5B5 /* AppDelegate.swift */; };
-		AF680B512120291A00FAD5B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF680B502120291A00FAD5B5 /* ViewController.swift */; };
+		AF680B512120291A00FAD5B5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF680B502120291A00FAD5B5 /* MainViewController.swift */; };
 		AF680B542120291A00FAD5B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF680B522120291A00FAD5B5 /* Main.storyboard */; };
 		AF680B562120291B00FAD5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF680B552120291B00FAD5B5 /* Assets.xcassets */; };
 		AF680B592120291B00FAD5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF680B572120291B00FAD5B5 /* LaunchScreen.storyboard */; };
+		AF680B672120298900FAD5B5 /* UIView+YALConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = AF680B622120298800FAD5B5 /* UIView+YALConstraints.m */; };
+		AF680B682120298900FAD5B5 /* YALContextMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF680B642120298800FAD5B5 /* YALContextMenuTableView.m */; };
+		AF680B6C21202A1000FAD5B5 /* ContextMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF680B6A21202A1000FAD5B5 /* ContextMenuCell.xib */; };
+		AF680B6D21202A1000FAD5B5 /* ContextMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF680B6B21202A1000FAD5B5 /* ContextMenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF680B4B2120291A00FAD5B5 /* Yalantis Context Menu iOS swift4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yalantis Context Menu iOS swift4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF680B4E2120291A00FAD5B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF680B502120291A00FAD5B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF680B502120291A00FAD5B5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AF680B532120291A00FAD5B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF680B552120291B00FAD5B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF680B582120291B00FAD5B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF680B5A2120291B00FAD5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF680B612120298800FAD5B5 /* Yalantis Context Menu iOS swift4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yalantis Context Menu iOS swift4-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF680B622120298800FAD5B5 /* UIView+YALConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YALConstraints.m"; sourceTree = "<group>"; };
+		AF680B632120298800FAD5B5 /* YALContextMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALContextMenuTableView.h; sourceTree = "<group>"; };
+		AF680B642120298800FAD5B5 /* YALContextMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALContextMenuTableView.m; sourceTree = "<group>"; };
+		AF680B652120298900FAD5B5 /* YALContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALContextMenuCell.h; sourceTree = "<group>"; };
+		AF680B662120298900FAD5B5 /* UIView+YALConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YALConstraints.h"; sourceTree = "<group>"; };
+		AF680B6A21202A1000FAD5B5 /* ContextMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextMenuCell.xib; sourceTree = "<group>"; };
+		AF680B6B21202A1000FAD5B5 /* ContextMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextMenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,38 @@
 		AF680B4D2120291A00FAD5B5 /* Yalantis Context Menu iOS swift4 */ = {
 			isa = PBXGroup;
 			children = (
+				AF680B69212029C500FAD5B5 /* cell */,
+				AF680B602120294000FAD5B5 /* YalantisFile */,
 				AF680B4E2120291A00FAD5B5 /* AppDelegate.swift */,
-				AF680B502120291A00FAD5B5 /* ViewController.swift */,
+				AF680B502120291A00FAD5B5 /* MainViewController.swift */,
 				AF680B522120291A00FAD5B5 /* Main.storyboard */,
 				AF680B552120291B00FAD5B5 /* Assets.xcassets */,
 				AF680B572120291B00FAD5B5 /* LaunchScreen.storyboard */,
 				AF680B5A2120291B00FAD5B5 /* Info.plist */,
 			);
 			path = "Yalantis Context Menu iOS swift4";
+			sourceTree = "<group>";
+		};
+		AF680B602120294000FAD5B5 /* YalantisFile */ = {
+			isa = PBXGroup;
+			children = (
+				AF680B662120298900FAD5B5 /* UIView+YALConstraints.h */,
+				AF680B622120298800FAD5B5 /* UIView+YALConstraints.m */,
+				AF680B652120298900FAD5B5 /* YALContextMenuCell.h */,
+				AF680B632120298800FAD5B5 /* YALContextMenuTableView.h */,
+				AF680B642120298800FAD5B5 /* YALContextMenuTableView.m */,
+				AF680B612120298800FAD5B5 /* Yalantis Context Menu iOS swift4-Bridging-Header.h */,
+			);
+			path = YalantisFile;
+			sourceTree = "<group>";
+		};
+		AF680B69212029C500FAD5B5 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF680B6B21202A1000FAD5B5 /* ContextMenuCell.swift */,
+				AF680B6A21202A1000FAD5B5 /* ContextMenuCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +132,7 @@
 				TargetAttributes = {
 					AF680B4A2120291A00FAD5B5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -124,6 +161,7 @@
 			files = (
 				AF680B592120291B00FAD5B5 /* LaunchScreen.storyboard in Resources */,
 				AF680B562120291B00FAD5B5 /* Assets.xcassets in Resources */,
+				AF680B6C21202A1000FAD5B5 /* ContextMenuCell.xib in Resources */,
 				AF680B542120291A00FAD5B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF680B512120291A00FAD5B5 /* ViewController.swift in Sources */,
+				AF680B672120298900FAD5B5 /* UIView+YALConstraints.m in Sources */,
+				AF680B512120291A00FAD5B5 /* MainViewController.swift in Sources */,
+				AF680B6D21202A1000FAD5B5 /* ContextMenuCell.swift in Sources */,
 				AF680B4F2120291A00FAD5B5 /* AppDelegate.swift in Sources */,
+				AF680B682120298900FAD5B5 /* YALContextMenuTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU2SL6522M;
 				INFOPLIST_FILE = "Yalantis Context Menu iOS swift4/Info.plist";
@@ -289,6 +331,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chepra.www.Yalantis-Context-Menu-iOS-swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yalantis Context Menu iOS swift4/YalantisFile/Yalantis Context Menu iOS swift4-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU2SL6522M;
 				INFOPLIST_FILE = "Yalantis Context Menu iOS swift4/Info.plist";
@@ -307,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chepra.www.Yalantis-Context-Menu-iOS-swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yalantis Context Menu iOS swift4/YalantisFile/Yalantis Context Menu iOS swift4-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
